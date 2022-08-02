@@ -8,4 +8,4 @@ my personal guide vault, ranging from a wide variety of topics
 - nothing
   - still nothing
 - more nothing
-- [https://github.com/nyllre/guides/data-structs-algorithms](Data Structures & Algorithms)
+- [Data Structures & Algorithms](https://github.com/nyllre/guides/data-structs-algorithms)
