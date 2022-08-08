@@ -1,0 +1,29 @@
+#+title: Emacs Org Mode
+
+* Task List
+** TODO Make an Emacs Org GUIDE
+SCHEDULED: <2022-08-08 Mon 8:00>
+- SPC-m-t-# marks a line as TODO
+- SPC-m-d-s opens org-schedule for a section
+- RET => toggle TODO & DONE
+
+** TODO do multiple things in one task [1/5] [20%]
++ [ ] CTRL + RET => add new item
++ [ ] C-c C-c => toggle Box
++ [X] SPC-m-x => same thing (space mark X)
++ [ ] add [0/0] to the head => automatically adds [0/X]
++ [-] for sub tasks
+  + [-] you can do them easily
+  + [ ] when they're finished the one up is finished
+
+** PROJ Org Agenda SPC-o-A
+*** a = agenda for current week (what you scheduled)
+*** t = todo items not done
+| => t => toggle state |
+
+*** s = search by keyword
+| => you can use regex! |
+
+** PROJ SPC-X for Capture Mode
+*** j => Journal
+*** n => notes
