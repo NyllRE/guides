@@ -1,4 +1,6 @@
 #+title: Emacs Org Mode
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+author: NyllRE
 
 * Task List
 ** TODO Make an Emacs Org GUIDE
@@ -17,13 +19,22 @@ SCHEDULED: <2022-08-08 Mon 8:00>
   + [ ] when they're finished the one up is finished
 
 ** PROJ Org Agenda SPC-o-A
-*** a = agenda for current week (what you scheduled)
-*** t = todo items not done
-| => t => toggle state |
+- a = agenda for current week (what you scheduled)
+- t = todo items not done
+  + t => toggle state
 
-*** s = search by keyword
-| => you can use regex! |
+- s = search by keyword
+  + you can use regex!
 
 ** PROJ SPC-X for Capture Mode
-*** j => Journal
-*** n => notes
+- j => Journal
+- n => notes
+- t => to-do's
+- p => local
+  + to-do's
+  + notes
+  + change-log
+
+** PROJ C-c C-e for exporting
+- m m => markdown
+- h h => html

@@ -1,25 +1,20 @@
 
 # Table of Contents
 
-1.  [Task List](#org70ef23f)
-    1.  [Make an Emacs Org GUIDE](#orga5a88e5)
-    2.  [do multiple things in one task <code>[1/5]</code> <code>[20%]</code>](#orgb9fb02e)
-    3.  [Org Agenda SPC-o-A](#org145cfb2)
-        1.  [a = agenda for current week (what you scheduled)](#org0c1db0b)
-        2.  [t = todo items not done](#orgd4617b5)
-        3.  [s = search by keyword](#orgd183d32)
-    4.  [SPC-X for Capture Mode](#org2d18ad0)
-        1.  [j => Journal](#org457fec0)
-        2.  [n => notes](#orgf13f741)
+1.  [Task List](#org527abb0)
+    1.  [Make an Emacs Org GUIDE](#orge8a51e6)
+    2.  [do multiple things in one task <code>[1/5]</code> <code>[20%]</code>](#orgb65cae4)
+    3.  [Org Agenda SPC-o-A](#orgab0eedd)
+    4.  [SPC-X for Capture Mode](#org1da37a5)
 
 
 
-<a id="org70ef23f"></a>
+<a id="org527abb0"></a>
 
 # Task List
 
 
-<a id="orga5a88e5"></a>
+<a id="orge8a51e6"></a>
 
 ## TODO Make an Emacs Org GUIDE
 
@@ -28,7 +23,7 @@
 -   RET => toggle TODO & DONE
 
 
-<a id="orgb9fb02e"></a>
+<a id="orgb65cae4"></a>
 
 ## TODO do multiple things in one task <code>[1/5]</code> <code>[20%]</code>
 
@@ -41,63 +36,27 @@
     -   [ ] when they&rsquo;re finished the one up is finished
 
 
-<a id="org145cfb2"></a>
+<a id="orgab0eedd"></a>
 
 ## PROJ Org Agenda SPC-o-A
 
+-   a = agenda for current week (what you scheduled)
+-   t = todo items not done
+    -   t => toggle state
 
-<a id="org0c1db0b"></a>
-
-### a = agenda for current week (what you scheduled)
-
-
-<a id="orgd4617b5"></a>
-
-### t = todo items not done
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+-   s = search by keyword
+    -   you can use regex!
 
 
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">=&gt; t =&gt; toggle state</td>
-</tr>
-</tbody>
-</table>
-
-
-<a id="orgd183d32"></a>
-
-### s = search by keyword
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">=&gt; you can use regex!</td>
-</tr>
-</tbody>
-</table>
-
-
-<a id="org2d18ad0"></a>
+<a id="org1da37a5"></a>
 
 ## PROJ SPC-X for Capture Mode
 
-
-<a id="org457fec0"></a>
-
-### j => Journal
-
-
-<a id="orgf13f741"></a>
-
-### n => notes
+-   j => Journal
+-   n => notes
+-   t => to-do&rsquo;s
+-   p => local
+    -   to-do&rsquo;s
+    -   notes
+    -   change-log
 

@@ -1,6 +1,6 @@
 # Personal Guide database
 
-> this is a work in progress, most of the quides will be done while learning the TOPICS
+>   this is a work in progress, most of the guides will be done while learning the TOPICS
 
 my personal guide vault, ranging from a wide variety of topics
 
