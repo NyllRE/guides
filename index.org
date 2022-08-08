@@ -1,0 +1,8 @@
+#+title: Nyll's Guide for everything
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+* Introduction
+    this is my guide to everything, anything I document I add Here
+
+    - [[./data-structs-algorithms][Data Structures & Algorithms]]
+    - [[./org/emacs-org-mode.html][Emacs - Org Mode]]
