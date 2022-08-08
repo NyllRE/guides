@@ -1,11 +1,16 @@
-# Personal Guide database
 
->   this is a work in progress, most of the guides will be done while learning the TOPICS
+# Table of Contents
 
-my personal guide vault, ranging from a wide variety of topics
+1.  [Introduction](#orgc7d9e2f)
 
-- nothing
-- nothing
-  - still nothing
-- more nothing
-- [Data Structures & Algorithms](https://github.com/NyllRE/guides/tree/master/data-structs-algorithms)
+
+
+<a id="orgc7d9e2f"></a>
+
+# Introduction
+
+this is my guide to everything, anything I document I add Here
+
+-   [Data Structures & Algorithms](./data-structs-algorithms)
+-   [Emacs - Org Mode](./org/emacs-org-mode.html)
+
