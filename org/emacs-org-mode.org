@@ -2,23 +2,24 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+author: NyllRE
 
-* Task List
-** TODO Make an Emacs Org GUIDE
+* Org Essentials
+** Make an Emacs Org GUIDE
 SCHEDULED: <2022-08-08 Mon 8:00>
-- SPC-m-t-# marks a line as TODO
+- SPC-m-t-# marks a section's status (TODO, DONE, PROJ, etc)
 - SPC-m-d-s opens org-schedule for a section
 - RET => toggle TODO & DONE
 
-** TODO do multiple things in one task [1/5] [20%]
+** PROJ Task Counters => [1/5] [20%]
 + [ ] CTRL + RET => add new item
-+ [ ] C-c C-c => toggle Box
-+ [X] SPC-m-x => same thing (space mark X)
-+ [ ] add [0/0] to the head => automatically adds [0/X]
-+ [-] for sub tasks
++ [X] C-c C-c or SPC-m-x => toggle Box
++ [ ] add [ / ] 'no spaces' to the head => automatically adds [0/X]
++ [ ] [ % ] for percentages
++ [-] and considering grouped tasks...
   + [-] you can do them easily
-  + [ ] when they're finished the one up is finished
+  + [ ] when they're finished the counter above gets toggled
 
-** PROJ Org Agenda SPC-o-A
+** Org Agenda `SPC-o-A`
+: the agenda collects all of the todo's you have and sorts them in multiple ways
 - a = agenda for current week (what you scheduled)
 - t = todo items not done
   + t => toggle state
