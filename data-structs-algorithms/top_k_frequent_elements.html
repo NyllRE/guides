@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-08-10 Wed 13:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Top K Frequent Elements Explaination</title>
+<meta name="author" content="Nyll" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Top K Frequent Elements Explaination</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd9287c3">1. Explanation</a>
+<ul>
+<li><a href="#orga2b343e">1.1. Example:</a></li>
+<li><a href="#org8a5f0b1">1.2. Constraints:</a></li>
+<li><a href="#org3563661">1.3. Follow up:</a></li>
+</ul>
+</li>
+<li><a href="#org98ca007">2. My Method</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd9287c3" class="outline-2">
+<h2 id="orgd9287c3"><span class="section-number-2">1.</span> Explanation</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+</p>
+</div>
+
+<div id="outline-container-orga2b343e" class="outline-3">
+<h3 id="orga2b343e"><span class="section-number-3">1.1.</span> Example:</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Input: nums = [1,1,1,2,2,3]; k = 2
+Output: [1,2]
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org8a5f0b1" class="outline-3">
+<h3 id="org8a5f0b1"><span class="section-number-3">1.2.</span> Constraints:</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+1     &lt;= nums.length &lt;= 10<sup>5</sup>
+-10<sup>4</sup> &lt;= nums[i]     &lt;= 10<sup>4</sup>
+</p>
+
+<p>
+k is in the range [1, the number of unique elements in the array].
+It is guaranteed that the answer is unique.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3563661" class="outline-3">
+<h3 id="org3563661"><span class="section-number-3">1.3.</span> Follow up:</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Your algorithm&rsquo;s time complexity must be better than O(n log n), where n is the array&rsquo;s size.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org98ca007" class="outline-2">
+<h2 id="org98ca007"><span class="section-number-2">2.</span> My Method</h2>
+<div class="outline-text-2" id="text-2">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #dcaeea;">nums</span> = [<span style="color: #da8548; font-weight: bold;">3</span>,<span style="color: #da8548; font-weight: bold;">6</span>,<span style="color: #da8548; font-weight: bold;">3</span>,<span style="color: #da8548; font-weight: bold;">5</span>,<span style="color: #da8548; font-weight: bold;">6</span>,<span style="color: #da8548; font-weight: bold;">5</span>,<span style="color: #da8548; font-weight: bold;">7</span>,<span style="color: #da8548; font-weight: bold;">2</span>,<span style="color: #da8548; font-weight: bold;">4</span>,<span style="color: #da8548; font-weight: bold;">2</span>,<span style="color: #da8548; font-weight: bold;">3</span>,<span style="color: #da8548; font-weight: bold;">4</span>,<span style="color: #da8548; font-weight: bold;">2</span>]
+<span style="color: #51afef;">from</span> collections <span style="color: #51afef;">import</span> defaultdict
+<span style="color: #dcaeea;">res</span> = defaultdict(<span style="color: #c678dd;">list</span>)
+nums.sort()
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>first we create a result dumber with a defaultdict type, then we do a loop</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #51afef;">for</span> num <span style="color: #51afef;">in</span> <span style="color: #dcaeea;">nums</span>:
+    count = [<span style="color: #da8548; font-weight: bold;">0</span>] * ( nums[-<span style="color: #da8548; font-weight: bold;">1</span>] +<span style="color: #da8548; font-weight: bold;">1</span> +<span style="color: #c678dd;">abs</span>(nums[<span style="color: #da8548; font-weight: bold;">0</span>]) )
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>this equation creates a list in range with the smallest number and the biggest number</li>
+</ul>
+<p>
+for example:
+</p>
+
+<p>
+input = [ -3, -1, 0, 1, 5]
+count = [0,0,0,0,0,0,0,0]
+len(count) = range(-3,5) = 8
+</p>
+
+<ul class="org-ul">
+<li>think of it as [ -3, -2, -1, &#x2026;, 5 ]</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Nyll</p>
+<p class="date">Created: 2022-08-10 Wed 13:06</p>
+</div>
+</body>
+</html>

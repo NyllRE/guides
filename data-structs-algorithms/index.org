@@ -1,5 +1,6 @@
 #+title: Data Structures & Algorithms
 #+author: Neetcode & Nyll
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
 Explainations & list source:
 https://neetcode.io
