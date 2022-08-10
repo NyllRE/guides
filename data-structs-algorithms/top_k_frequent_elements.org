@@ -6,43 +6,49 @@
 * Explanation
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
-** Example:
+- Example:
 
-Input: nums = [1,1,1,2,2,3]; k = 2
-Output: [1,2]
+Input:
+    - nums = [1,1,1,2,2,3]
+    - k = 2
+
+Output:
+    - [1,2]
 
 
-** Constraints:
-1     <= nums.length <= 10^5
--10^4 <= nums[i]     <= 10^4
+- Constraints:
+  - 1     <= nums.length <= 10^5
+  - -10^4 <= nums[i]     <= 10^4
 
 k is in the range [1, the number of unique elements in the array].
 It is guaranteed that the answer is unique.
 
-** Follow up:
-Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
+- Follow up:
+    Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 
 
 * My Method
+[[file:top_k_frequent_elements.py][The Code For My Method]]
 #+begin_src python
-nums = [3,6,3,5,6,5,7,2,4,2,3,4,2]
 from collections import defaultdict
 res = defaultdict(list)
 nums.sort()
 #+end_src
 
-- first we create a result dumber with a defaultdict type, then we do a loop
+first we create a result dumber with a defaultdict type, then we do a loop
 
 #+begin_src python
 for num in nums:
     count = [0] * ( nums[-1] +1 +abs(nums[0]) )
 #+end_src
 
-- this equation creates a list in range with the smallest number and the biggest number
-for example:
+this equation creates a list in range with the smallest number and the biggest number
 
-input = [ -3, -1, 0, 1, 5]
+for example:
+#+begin_src python
+input = [ -3, -1, 0, 5]
 count = [0,0,0,0,0,0,0,0]
 len(count) = range(-3,5) = 8
+#+end_src
 
-- think of it as [ -3, -2, -1, ..., 5 ]
+- think of it as [ -3, -2, -1, 0, 1, 2, 3, 4, 5 ]

@@ -5,41 +5,40 @@
 Explainations & list source:
 https://neetcode.io
 
-* Leetcode Questions
-** Arrays & Hashing
-*** [2/3] Contains duplicate
+* Arrays & Hashing
+** [2/3] Contains duplicate
   - [X] solved
   - [X] studied better version
   - [ ] explained
-*** [2/3] Valid Anagram
+** [2/3] Valid Anagram
   - [X] solved
   - [X] studied better version
   - [ ] explained
-*** [2/3] Two Sum
+** [2/3] Two Sum
   - [X] solved
   - [X] studied better version
   - [ ] explained
-*** [2/3] Group Anagrams
+** [2/3] Group Anagrams
   - [X] solved
   - [X] studied better version
   - [ ] explained
-*** [2/3] [[./top_k_frequent_elements.org][Top K Frequent Elements]]
+** [2/3] [[./top_k_frequent_elements.org][Top K Frequent Elements]]
   - [X] solved
   - [X] studied better version
   - [ ] explained
-*** [2/3] [[./products_of_array_except_self.org][Products Of Array Except Self]]
+** [2/3] [[./products_of_array_except_self.org][Products Of Array Except Self]]
   - [X] solved
   - [X] studied better version
   - [ ] explained
-*** [0/3] Valid Sudoku
+** [0/3] Valid Sudoku
   - [ ] solved
   - [ ] studied better version
   - [ ] explained
-*** [0/3] Encode and Decode strings
+** [0/3] Encode and Decode strings
   - [ ] solved
   - [ ] studied better version
   - [ ] explained
-*** [0/3] Longest Consecutive Sequence
+** [0/3] Longest Consecutive Sequence
   - [ ] solved
   - [ ] studied better version
   - [ ] explained
