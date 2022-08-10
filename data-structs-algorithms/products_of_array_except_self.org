@@ -1,5 +1,6 @@
 #+title: Products_of_array_except_self
 #+author: Nyll
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
 Explaination Source:
 https://www.youtube.com/watch?v=bNvIQI2wAjk

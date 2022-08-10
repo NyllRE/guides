@@ -2,6 +2,8 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+author: NyllRE
 
+site: https://nyllre.github.io/guides/
+
 * Introduction
     this is my guide to everything, anything I document I add Here
 
